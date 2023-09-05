@@ -8,7 +8,7 @@ import sys
 app = Flask(__name__)
 
 # Load configurations from environment or config file
-app.config.from_pyfile('config_file2.cfg')
+app.config.from_pyfile('config_file.cfg')
 
 if ("VOTE1VALUE" in os.environ and os.environ['VOTE1VALUE']):
     button1 = os.environ['VOTE1VALUE']
